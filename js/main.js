@@ -11,3 +11,11 @@ const showMenu = (toogleId, navId) => {
 };
 
 showMenu("nav-toogle", "nav-menu");
+// ACITVE LINK AND REMOVE MENU
+const navLinks = document.querySelectorAll(".nav__link");
+const linkAction = (e) => {
+  navLinks.forEach((link) => link.classList.remove("active"));
+  e.target.classList.add("active");
+  document.getElementById("nav-menu").classList.remove("show");
+};
+navLinks.forEach((i) => i.addEventListener("click", linkAction));
