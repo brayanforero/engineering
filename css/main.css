@@ -295,8 +295,146 @@ img {
   width: 100%;
 }
 
-/* @media screen and (min-width: 768px) {
-  .skills__container {
-    grid-template-columns: repeat(2, 1fr);
+.skills__img {
+  border-radius: 0.5rem;
+}
+
+/*WORKS*/
+
+.work {
+  text-align: center;
+}
+.work__container {
+  row-gap: 2rem;
+}
+
+.work__img {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  transition: 1s;
+  transform: scale(1);
+}
+.work__img img {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.work__img img:hover {
+  transform: scale(1.1);
+}
+
+/*CONTACT*/
+
+.contact__input {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+
+.contact__button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer__social {
+  background: var(--mb-4);
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
   }
-} */
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .section__title {
+    margin-bottom: var(--mb-6);
+  }
+
+  .section__title::after {
+    width: 80px;
+    top: 3rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+    padding-top: 0;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+  .nav__link {
+    color: var(--second-color);
+  }
+  .nav__toogle {
+    display: none;
+  }
+
+  .home {
+    height: 100vh;
+  }
+
+  .home__data {
+    align-self: end;
+  }
+
+  .home__social {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    align-self: end;
+  }
+
+  .home__social-icon {
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
+  }
+
+  .home__img {
+    width: 457px;
+    bottom: 15%;
+  }
+
+  .about__container {
+    grid-template-columns: repeat (2, 1fr);
+    align-items: center;
+  }
+}
