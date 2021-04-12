@@ -147,7 +147,7 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -155,10 +155,10 @@ img {
     padding: 1rem;
     background-color: var(--second-color);
     transition: 0.5s;
-  }
-}right: -100%;
+    right: -100%;
     width: 80%;
-    
+  }
+}
 
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -461,6 +461,7 @@ img {
 
   .contact__container {
     justify-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -469,8 +470,7 @@ img {
     margin-right: auto;
   }
 
-  .home__10{
+  .home__10 {
     right: 10%;
   }
 }
-    
