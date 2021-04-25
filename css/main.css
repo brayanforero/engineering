@@ -179,6 +179,12 @@ img {
   color: var(--second-color);
 }
 
+.nav__logo {
+  display: flex;
+  grid-gap: 0 0.5rem;
+  align-items: center;
+}
+
 .nav__toogle {
   font-size: 1.5rem;
   cursor: pointer;
