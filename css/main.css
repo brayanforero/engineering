@@ -10,6 +10,7 @@
 :root {
   --first-color: #4070f4;
   --second-color: #0e2431;
+  --github-color: #111111;
 }
 
 /* FONTS */
@@ -308,8 +309,45 @@ img {
 /*WORKS*/
 
 .work {
-  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  outline: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(14, 36, 49, 0.15);
+  height: 20rem;
+  max-width: 20rem;
 }
+
+.work__title {
+  margin-bottom: var(--mb-1);
+}
+
+.work__describe {
+  margin: var(--m-0);
+}
+
+.work__feed {
+  padding: 1em 2em;
+}
+
+.work__actions {
+  padding-top: 1em;
+}
+
+.work__actions a {
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  color: #fff;
+}
+
+.work__actions :first-child {
+  background-color: var(--first-color);
+}
+.work__actions :last-child {
+  background-color: var(--github-color);
+}
+
 .work__container {
   row-gap: 2rem;
 }
@@ -318,19 +356,8 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  transition: 1s;
-  transform: scale(1);
   height: 20rem;
   max-width: 20rem;
-}
-.work__img img {
-  cursor: pointer;
-  transition: 0.8s;
-  height: 100%;
-}
-
-.work__img img:hover {
-  transform: scale(1.1);
 }
 
 /*CONTACT*/
