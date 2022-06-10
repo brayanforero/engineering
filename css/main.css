@@ -314,8 +314,14 @@ img {
   outline: 1px solid #eee;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(14, 36, 49, 0.15);
-  height: 20rem;
-  max-width: 20rem;
+  /* height: 20rem;s */
+}
+
+.work img {
+  display: block;
+  margin: var(--m-0);
+  height: 180px;
+  max-height: 180px;
 }
 
 .work__title {
@@ -350,14 +356,6 @@ img {
 
 .work__container {
   row-gap: 2rem;
-}
-
-.work__img {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  height: 20rem;
-  max-width: 20rem;
 }
 
 /*CONTACT*/
